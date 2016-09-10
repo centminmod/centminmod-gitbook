@@ -1,3 +1,3 @@
-# My Awesome Book
+# Centmin Mod Documentation
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+[Centmin Mod LEMP web stack](https://centminmod.com/) is constantly undergoing developments and improvements so keeping up with official documentation is a difficult task. The aim for this documentation guide is to keep up as best as possible.
