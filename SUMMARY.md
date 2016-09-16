@@ -20,6 +20,7 @@
    * Step 13
    * Step 14
    * Step 15
+   * Step 16
 * [Nginx](nginx.md)
 * [PHP-FPM](php-fpm.md)
 * [MariaDB MySQL](mariadb_mysql.md)
