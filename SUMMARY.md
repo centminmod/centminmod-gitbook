@@ -19,7 +19,7 @@
    * [Step 12](step_12.md)
    * [Step 13](step_13.md)
    * [Step 14](step_14.md)
-   * Step 15
+   * [Step 15](step_15.md)
    * Step 16
    * Step 17
    * Step 18
