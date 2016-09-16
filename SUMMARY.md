@@ -9,4 +9,5 @@
 * PHP-FPM
 * MariaDB MySQL
 * CSF Firewall
+* Memcached Server
 
