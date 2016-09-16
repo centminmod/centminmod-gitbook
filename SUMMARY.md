@@ -8,4 +8,5 @@
 * Nginx
 * PHP-FPM
 * MariaDB MySQL
+* CSF Firewall
 
