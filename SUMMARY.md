@@ -10,4 +10,5 @@
 * MariaDB MySQL
 * CSF Firewall
 * Memcached Server
+* Redis Server
 
