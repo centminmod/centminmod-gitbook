@@ -6,7 +6,7 @@
 * [Configuration Files](configuration_files.md)
 * [Getting Started](getting_started.md)
 * [Nginx](nginx.md)
-* PHP-FPM
+* [PHP-FPM](php-fpm.md)
 * MariaDB MySQL
 * CSF Firewall
 * Memcached Server
