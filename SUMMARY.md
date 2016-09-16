@@ -9,7 +9,7 @@
    * [Step 2](step_2.md)
    * [Step 3](step_3.md)
    * [Step 4](step_4.md)
-   * Step 5
+   * [Step 5](step_5.md)
    * Step 6
    * Step 7
    * Step 8
