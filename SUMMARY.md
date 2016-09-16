@@ -6,6 +6,7 @@
 * [Configuration Files](configuration_files.md)
 * [Getting Started](getting_started.md)
    * [Step 1](step_1.md)
+   * Step 2
 * [Nginx](nginx.md)
 * [PHP-FPM](php-fpm.md)
 * [MariaDB MySQL](mariadb_mysql.md)
