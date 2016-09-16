@@ -1,1 +1,12 @@
 /* CSS for website */
+.book-header {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    overflow: visible;
+    height: 50px;
+    padding: 0 8px;
+    z-index: 2;
+    font-size: .85em;
+    color: #fff;
+    background: 0 0;
+    background-color: #43a6df;
+}
