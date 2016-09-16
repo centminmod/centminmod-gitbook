@@ -8,9 +8,9 @@
     font-size: .85em;
     color: #fff;
     background: 0 0;
-    background-color: #43a6df;
+    background-color: #43a6df !important;
 }
 .book-header h1 a, .book-header h1 a:hover {
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
 }
