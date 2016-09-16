@@ -5,6 +5,7 @@
 * [Shell Menu](shell_menu.md)
 * [Configuration Files](configuration_files.md)
 * [Getting Started](getting_started.md)
+   * Step 1
 * [Nginx](nginx.md)
 * [PHP-FPM](php-fpm.md)
 * [MariaDB MySQL](mariadb_mysql.md)
