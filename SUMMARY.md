@@ -6,4 +6,5 @@
 * [Configuration Files](configuration_files.md)
 * [Getting Started](getting_started.md)
 * Nginx
+* PHP-FPM
 
