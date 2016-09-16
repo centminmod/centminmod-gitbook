@@ -7,4 +7,5 @@
 * [Getting Started](getting_started.md)
 * Nginx
 * PHP-FPM
+* MariaDB MySQL
 
