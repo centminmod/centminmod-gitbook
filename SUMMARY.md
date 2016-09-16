@@ -2,6 +2,6 @@
 
 * [Introduction](README.md)
 * [Installation](installation.md)
-* Configuration Files
+* [Configuration Files](configuration_files.md)
 * [Getting Started](getting_started.md)
 
