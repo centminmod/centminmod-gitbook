@@ -13,7 +13,7 @@
    * [Step 6](step_6.md)
    * [Step 7](step_7.md)
    * [Step 8](step_8.md)
-   * Step 9
+   * [Step 9](step_9.md)
    * Step 10
    * Step 11
    * Step 12
