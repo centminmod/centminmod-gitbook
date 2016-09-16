@@ -8,7 +8,7 @@
 * [Nginx](nginx.md)
 * [PHP-FPM](php-fpm.md)
 * [MariaDB MySQL](mariadb_mysql.md)
-* CSF Firewall
+* [CSF Firewall](csf_firewall.md)
 * Memcached Server
 * Redis Server
 
