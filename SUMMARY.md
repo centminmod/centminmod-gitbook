@@ -6,7 +6,7 @@
 * [Configuration Files](configuration_files.md)
 * [Getting Started](getting_started.md)
    * [Step 1](step_1.md)
-   * Step 2
+   * [Step 2](step_2.md)
    * Step 3
    * Step 4
    * Step 5
