@@ -21,7 +21,7 @@
    * [Step 14](step_14.md)
    * [Step 15](step_15.md)
    * [Step 16](step_16.md)
-   * Step 17
+   * [Step 17](step_17.md)
    * Step 18
    * Step 19
 * [Nginx](nginx.md)
