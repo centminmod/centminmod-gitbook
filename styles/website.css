@@ -10,3 +10,7 @@
     background: 0 0;
     background-color: #43a6df;
 }
+.book-header h1 a, .book-header h1 a:hover {
+    color: #fff;
+    text-decoration: none;
+}
