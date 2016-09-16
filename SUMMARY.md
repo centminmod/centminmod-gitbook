@@ -8,7 +8,7 @@
    * [Step 1](step_1.md)
    * [Step 2](step_2.md)
    * [Step 3](step_3.md)
-   * Step 4
+   * [Step 4](step_4.md)
    * Step 5
    * Step 6
    * Step 7
