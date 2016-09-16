@@ -10,5 +10,5 @@
 * [MariaDB MySQL](mariadb_mysql.md)
 * [CSF Firewall](csf_firewall.md)
 * [Memcached Server](memcached_server.md)
-* Redis Server
+* [Redis Server](redis_server.md)
 
