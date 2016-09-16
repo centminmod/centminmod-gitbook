@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Installation](chapter1.md)
-* Getting Started
+* [Getting Started](getting_started.md)
 
