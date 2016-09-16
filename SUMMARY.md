@@ -8,6 +8,7 @@
    * [Step 1](step_1.md)
    * Step 2
    * Step 3
+   * Step 4
 * [Nginx](nginx.md)
 * [PHP-FPM](php-fpm.md)
 * [MariaDB MySQL](mariadb_mysql.md)
