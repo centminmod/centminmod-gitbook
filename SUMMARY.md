@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Installation](chapter1.md)
+* [Installation](installation.md)
 * [Getting Started](getting_started.md)
 
