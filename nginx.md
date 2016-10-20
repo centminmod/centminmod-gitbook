@@ -35,8 +35,7 @@ adding module in ../nginx-http-concat-master
 ./configure: error: no ../nginx-http-concat-master/config was found
 
 Sat Feb 23 22:15:41 CET 2013
-Error: 1, Nginx configure failed
-```
+Error: 1, Nginx configure failed```
 
 For more detailed troubleshooting for failed upgrades, you can also check the automated logs when Nginx upgrade runs. The log directory is defined by variable CENTMINLOGDIR='/root/centminlogs' in inc/centminlogs.inc. When you run a menu option, the entire process will be logged to a time stamped text log file named ${CENTMINLOGDIR}/centminmod_${SCRIPT_VERSION}_${DT}_*.log so you can review the logs for error messages etc
 
