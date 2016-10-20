@@ -56,3 +56,24 @@ total 7.3M
 1.3M Apr 14 18:02 centminmod_1.2.2-eva2000.15_140412-173219_nginx_upgrade.log
  23K Apr 14 18:31 centminmod_1.2.2-eva2000.15_140412-183136_nsd_reinstall.log
  ```
+
+
+### Checking Domain's Nginx Access Log
+
+Sometimes you need to check your domain's Nginx access log for specific error codes i.e. 404, 502, 503, 200, 301, 302 etc. Here's how you can quickly do it for Centmin Mod servers.
+
+First go to domain's log directory (may content rotated logs (rotates at 100M sizes)
+
+```cd /home/nginx/domains/domainname.com/log```
+  
+Full output filtered on status code you enter i.e. 404, 500, 502, 503 etc
+
+```read -ep "Filter which status code ? i.e. 404 : " var ; awk -v errno=${var} '$9 == 'errno' { print $0 }' access.log```
+
+Filtered on unique url accessed minus ip address and date info
+
+```read -ep "Filter which status code ? i.e. 404 : " var ; awk -v errno=${var} '$9 == 'errno' {for(i=7;i<=22;i++)printf "%s ",$i;print ""}' access.log | sort -u```
+
+Filtered IP count
+
+```read -ep "Filter which status code ? i.e. 404 : " var ; awk -v errno=${var} '$9 == 'errno' { print $1 }' access.log | sort | uniq -c | sort -n```
