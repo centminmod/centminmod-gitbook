@@ -1,24 +1,20 @@
 # Nginx
 
-
-### How is Nginx installed
+## How is Nginx installed
 
 Nginx is dynamically configured and optimized out of the box based on the detected server's resources available (cpu, memory, disk etc). Nginx has switched back from LibreSSL to OpenSSL for Nginx 1.9.12+ and newer compatibility outlined [here](https://community.centminmod.com/posts/27262/). Currenntly, Nginx 1.11 mainline branch is used which is generally recommended by Nginx as it's more reliable due to all bug fixes ported to Nginx 1.11 mainline branch and not just major critical fixes which applied to the Nginx 1.10 stable branch ([nginx.com](https://www.nginx.com/blog/nginx-1-10-1-11-released/)).
 
 You can see the developer overview of the Nginx install process here.
 
-
-### Nginx Upgrade
+## Nginx Upgrade
 
 If you are upgrading a server which already previously had Centmin Mod installed, you DO NOT need to run option #1 (in fact as of Centmin Mod v1.2.2-eva2000.14 it will be impossible to run `centmin.sh menu option 1` as the script will detect previous install of Centmin Mod and abort the script), instead run `centmin.sh menu option 4` and then `centmin.sh menu option 5` for upgrading Nginx web server and upgrading PHP. You only need to run these if you upgrading to new Nginx or PHP version. If your existing Centmin Mod install has the same versions for Nginx and PHP, no need to even run those menu options.
 
-
-### Automatic Nginx Config Backup
+## Automatic Nginx Config Backup
 
 Nginx upgrade process will also backup your existing Nginx conf directory and file via 3 options in centmin.sh: `NGINXBACKUP='y'`, `NGINXCONFDIR='/usr/local/nginx/conf'`, `NGINXBACKUPDIR='/usr/local/nginxbackup'`. You will find backups of previous Nginx versions in timestamped directories located within `/usr/local/nginxbackup`.
 
-
-### Nginx Upgrade - Error Checking Routine
+## Nginx Upgrade - Error Checking Routine
 
 Centmin Mod has an inbuilt Nginx upgrade error checking routine which checks at Nginx configure, make and make install stages for errors. If any of 3 stages have errors, the script will abort and give you an idea where and what the error is.
 
@@ -55,25 +51,24 @@ total 7.3M
  17K Apr 14 17:49 centminmod_1.2.2-eva2000.15_140412-173219_ffmpeg_install.log
 1.3M Apr 14 18:02 centminmod_1.2.2-eva2000.15_140412-173219_nginx_upgrade.log
  23K Apr 14 18:31 centminmod_1.2.2-eva2000.15_140412-183136_nsd_reinstall.log
- ```
+```
 
-
-### Checking Domain's Nginx Access Log
+## Checking Domain's Nginx Access Log
 
 Sometimes you need to check your domain's Nginx access log for specific error codes i.e. 404, 502, 503, 200, 301, 302 etc. Here's how you can quickly do it for Centmin Mod servers.
 
 First go to domain's log directory (may content rotated logs (rotates at 100M sizes)
 
-```cd /home/nginx/domains/domainname.com/log```
-  
+`cd /home/nginx/domains/domainname.com/log`
+
 Full output filtered on status code you enter i.e. 404, 500, 502, 503 etc
 
-```read -ep "Filter which status code ? i.e. 404 : " var ; awk -v errno=${var} '$9 == 'errno' { print $0 }' access.log```
+`read -ep "Filter which status code ? i.e. 404 : " var ; awk -v errno=${var} '$9 == 'errno' { print $0 }' access.log`
 
 Filtered on unique url accessed minus ip address and date info
 
-```read -ep "Filter which status code ? i.e. 404 : " var ; awk -v errno=${var} '$9 == 'errno' {for(i=7;i<=22;i++)printf "%s ",$i;print ""}' access.log | sort -u```
+`read -ep "Filter which status code ? i.e. 404 : " var ; awk -v errno=${var} '$9 == 'errno' {for(i=7;i<=22;i++)printf "%s ",$i;print ""}' access.log | sort -u`
 
 Filtered IP count
 
-```read -ep "Filter which status code ? i.e. 404 : " var ; awk -v errno=${var} '$9 == 'errno' { print $1 }' access.log | sort | uniq -c | sort -n```
+`read -ep "Filter which status code ? i.e. 404 : " var ; awk -v errno=${var} '$9 == 'errno' { print $1 }' access.log | sort | uniq -c | sort -n`
