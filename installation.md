@@ -46,3 +46,18 @@ For CentOS 7.x (will be end of life by May 2024):
 1. Centmin Mod EL8 installs will default to GCC 11.2 for compilation routines instead of the current Centmin Mod 130.00beta01 default for GCC 10.2 and EL8 system default GCC 8.5
 2. Centmin Mod EL8 installs will default to PHP 8.0.x installation (PHP-FPM). EL9 OS will default to a minimum PHP 8.1.x version and PHP versions below PHP 8.1 won't work right now with EL9 OSes. If you need PHP 7.4 to 8.0 then stick with EL8 OSes like Alma Linux 8 or Rocky Linux 8.
 3. Centmin Mod EL8 installs as at September 27, 2022 onwards, will switch from official MariaDB YUM repo provided MariaDB 10.3 which has support ending May 2023 to native EL8 Appstream module provided MariaDB 10.3 version which has [extended support until May 2029](https://access.redhat.com/support/policy/updates/rhel-app-streams-life-cycle#rhel8\_application\_streams)
+4.  Centmin Mod EL8 installs on AlmaLinux 8 or Rocky Linux 8 require SELinux to be disabled. However, EL9 and also Linux Kernel 6.4 will [remove run time disabling of SELinux](https://github.com/SELinuxProject/selinux-kernel/wiki/DEPRECATE-runtime-disable). So to anticipate the potential in future of EL8 folks updating to Linux 6.4 and alike Kernels, the EL8 installers will check if SELinux is disabled and prompt the user to reboot their server to properly disable SELinux before actually running Centmin Mod installers. Example, when you run Centmin Mod installer on EL8 OS, you may be greeted with the following if you have a EFI setup for /boot/efi/EFI/almalinux/grub.cfg, you'll see:\
+    \
+
+
+    ```
+    Detected SELinux NOT disabled for EL8
+    Adding selinux=0 to Kernel GRUB_CMDLINE_LINUX line in /etc/default/grub
+    GRUB_CMDLINE_LINUX="rd.auto nomodeset console=tty0 selinux=0"
+    Regenerating GRUB2 configuration
+    grub2-mkconfig -o /boot/efi/EFI/almalinux/grub.cfg
+    Added selinux=0 to Kernel GRUB_CMDLINE_LINUX line in /etc/default/grub to disable SELinux
+    This is the right way to disable SELinux in future as other run-time methods deprecated
+    If you intend to use own custom Linux Kernels i.e. ELRepo, ensure you have selinux=0 set
+    Please reboot system to disable SELinux then install Centmin Mo 
+    ```
